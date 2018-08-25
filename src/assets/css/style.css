@@ -709,17 +709,20 @@ label {
   width: 50vw;
 }
 .home-banner .hb-svg .svg-animate {
-  animation: blink 1s infinite reverse;
+  animation: blink 3s infinite reverse;
 }
 @keyframes blink {
   0% {
-    stroke-width: 1px;
+    stroke-width: 3px;
+    stroke: transparent;
   }
   50% {
-    stroke-width: 2px;
+    stroke-width: 12px;
+    stroke: #ffffff;
   }
   100% {
-    stroke-width: 1px;
+    stroke-width: 3px;
+    stroke: transparent;
   }
 }
 .home-banner .hb-extra-info {

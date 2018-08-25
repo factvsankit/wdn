@@ -8,9 +8,15 @@ class Logo extends Component{
     render(){
         return(
             <div className="logo">
-                <Link to="/">
+                {/* <Link to="/">
                     <img src={ LogoImage } alt="Worker's Directory Nepal" />
-                </Link>
+                </Link> */}
+                <h1 className="ff-serif theme-ffffff" style={{
+                    marginTop: '6px',
+                    marginBottom: '0',
+                    fontWeight: 'bold'
+                }}>WDN</h1> 
+                <span className="theme-eceff6">Worker's Directory Nepal</span>
             </div>
         )
     }
