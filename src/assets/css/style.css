@@ -706,7 +706,7 @@ label {
 }
 .home-banner .hb-svg svg {
   height: 55vh;
-  width: 55vw;
+  width: 50vw;
 }
 .home-banner .hb-svg .svg-animate {
   animation: blink 1s infinite reverse;
