@@ -603,7 +603,7 @@ label{
         position: absolute;
         right:5%;
         bottom:15%;
-        z-index: 1;
+        z-index: 3;
         svg{
 			height: 55vh;
 			width: 50vw;
@@ -611,20 +611,42 @@ label{
 
 
     .svg-animate{
-        animation: blink 1s infinite reverse;
+		&.sa-fill-white{
+			animation: fillWhite 3s infinite reverse;
+			stroke:$theme-ffffff;
+			stroke-width: 1px;
+			fill:$theme-ffffff;
+		}
+		&.sa-fill-red{
+			animation: fillRed 3s infinite reverse;
+			stroke:$theme-da203e;
+			stroke-width: 1px;
+			fill:$theme-da203e;
+		}
     }
-
-    @keyframes blink{
+	
+    @keyframes fillWhite{
         0%{
-            stroke-width: 1px;
+			fill: transparent;
         }
         50%{
-            stroke-width: 2px;
+			fill: $theme-ffffff;
         }
         100%{
-            stroke-width: 1px;
+			fill: transparent;
         }
-    }
+	}
+    @keyframes fillRed{
+        0%{
+			fill: transparent;
+        }
+        50%{
+			fill: $theme-da203e;
+        }
+        100%{
+			fill: transparent;
+        }
+    }		
 
     }
     .hb-extra-info{
